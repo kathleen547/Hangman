@@ -16,7 +16,7 @@ guessed1 = str('_' * len(word))
 print(guessed1)
 guessed = list(guessed1)
 userLetters = set()
-chances = 6
+chances = 7
 
 while True:
     print('Guess a letter: ')
@@ -41,7 +41,7 @@ while True:
     b = "".join(guessed)
     print(b)
     if chances == 0:
-        print('You lost! The word is ', w)
+        print('You lost! The word is ', word)
         break
     if b.count('_') == 0:
         print('You won!')
